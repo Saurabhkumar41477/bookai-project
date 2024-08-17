@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BookAI: Revolutionary AI-Powered Book Generation | Create Professional
+        Books in Minutes</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/adarshagupta/trybookai/main/logo.png">
+    <link rel="stylesheet" href="./designscritps/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="https://raw.githubusercontent.com/adarshagupta/trybookai/main/logo.png" alt="" height="50vh" width="60vw">
+            </div>
+            <div class="tile">
+                <h1 class="tile">BookAI</h1>
+            </div>
+            <div class="items">
+                <li style="list-style-type: none;"><a href="https://trybookai.com/#features">Main Website</a></li>
+                <li style="list-style-type: none;"><a href="pricing.html">pricing</a></li>
+                <button id="theme-toggle"><img id="dkmode" src="https://cdn-icons-png.flaticon.com/128/12301/12301351.png"
+                    alt="" height="40px"></button>
+            </div>
+            
+        </nav>
+    </header>    
+    <div class="content">        
+        <section class="pricing">
+            <h1>Our API Pricing Plans</h1>
+            <div class="pricing-cards">
+                <div class="card">
+                    <h2>Open AI</h2>
+                    <p class="price">$0.002 <span>/ month</span></p>
+                    <ul>
+                        <li >GPT-3.5</li>
+                    </ul>
+                    <button onclick="selectPlan('GPT-3.5')">Select</button>
+                </div>
+                <div class="card">
+                    <h2>Open AI</h2>
+                    <p class="price">$0.03 <span>/ month</span></p>
+                    <ul>
+                        <li >GPT-4</li>
+                    </ul>
+                    <button onclick="selectPlan('GPT-4')">Select</button>
+                </div>
+                <div class="card">
+                    <h2>Together AI</h2>
+                    <p class="price">$0.0008 <span>/ month</span></p>
+                    <ul>
+                        <li >Llama-2-70b</li>
+                    </ul>
+                    <button onclick="selectPlan('Llama-2-70b')">Select</button>
+                </div>
+                <div class="card">
+                    <h2>Together AI</h2>
+                    <p class="price">$0.0006 <span>/ month</span></p>
+                    <ul>
+                        <li >Llama-2-13b</li>
+                    </ul>
+                    <button onclick="selectPlan('Llama-2-13b')">Select</button>
+                </div>
+               
+            </div>
+        </section>
+    </div>
+    <script src="./designscritps/core.js"></script>
+</body>
+
+</html>

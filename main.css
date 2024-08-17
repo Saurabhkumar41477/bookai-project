@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b74dbc;
+    margin: 0;
+    padding: 0;
+    /* background-image: url(https://media4.giphy.com/media/4ydWTcMBjimLbT1CHi/giphy.webp?cid=790b7611jay7chc5vsndxdw8elixecntn3ymef0h8dml52zb&ep=v1_gifs_search&rid=giphy.webp&ct=g);
+    background-repeat: no-repeat;
+    background-size:100%; */
+    backdrop-filter: blur(5px);
+    
+}
+header{
+    margin: 0px;
+    position: sticky;
+    top: 0px;
+}
+nav{
+    height: 8vh;
+    background-color: rgb(102, 32, 102);   
+    display: flex;
+    align-items: center;
+    
+}
+a{
+    color: #ddd;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ;
+}
+a:visited{
+    color: grey;
+}
+a:hover{
+    color: #f5f5f5;
+}
+.tile{
+    color: #aaa;
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    color: #444;
+}
+
+.content{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.pricing {
+    margin-top: 5vh;
+    text-align: center;
+    padding: 50px;
+}
+
+.pricing h1 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #c0c0c0;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.price {
+    font-size: 2em;
+    color: #333;
+}
+
+.price span {
+    font-size: 0.5em;
+    color: #888;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #666;
+}
+
+button {
+    background-color: #ed4ae2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#dkmode{
+    transform: translate(-20px,-10px);
+}
+button:hover {
+    background-color: #0056b3;
+}
+#theme-toggle {
+    height: 40px;
+    width: 10px;
+        
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #eeeeee;
+}
+body.dark-mode {
+    background-color: #231a1a;
+    /* background-image: url(https://media0.giphy.com/media/gdgnKQ4xxs6A7l0ITD/200.webp?cid=790b7611ycubaby74yzc1w1fjcwqipir45scw2epd3rtxlh5&ep=v1_gifs_search&rid=200.webp&ct=g); */
+}
+
+body.dark-mode .pricing h1 {
+    color: #424242;
+}
+
+body.dark-mode .card {
+    background-color: #444;
+    color: #ddd;
+}
+body.dark-mode.nav{
+    background-color: #333;
+}
+body.dark-mode .card h2 {
+    color: #eee;
+}
+
+body.dark-mode .price {
+    color: #ddd;
+}
+
+body.dark-mode .price span {
+    color: #aaa;
+}
+
+body.dark-mode .card ul li {
+    color: #bbb;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #292929;
+    color: #333;
+}
+
+body.dark-mode #theme-toggle:hover {
+    background-color: #bbb;
+}
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .pricing h1 {
+        font-size: 2em;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .pricing h1 {
+        font-size: 1.5em;
+    }
+
+    .card h2 {
+        font-size: 1.5em;
+    }
+
+    .price {
+        font-size: 1.5em;
+    }
+
+    #theme-toggle {
+        font-size: 0.9em;
+    }
+}
